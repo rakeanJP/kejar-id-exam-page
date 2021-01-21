@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap);
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto Mono , monospace;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: auto;
+}
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.logo-text {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.header-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px 16px;
+  width: auto;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+}
+
+.subject {
+  margin: auto;
+  width: 50%;
+  margin-top: 100px;
+  padding: 0px 16px 16px 16px;
+}
+
+.subject a {
+  text-decoration: none;
+}
+
+.menjauh {
+  margin-top: 10px;
+}
+
+.mapel a {
+  display: block;
+  padding-top: 20px;
+}
+
+.close {
+  opacity: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f4f6f9;
+  padding: 1.4rem 1.6rem;
+  padding-top: 20px;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.close img {
+  margin-right: 13px;
+}
+
+.container-mapel {
+  background: #f4f6f9;
+  padding: 24px 14px 24px 14px;
+  color: black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row img {
+  margin-right: 13px;
+}
+
+.paragraph {
+  padding: 6px;
+}
+
+.paragraph span {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 400px) {
+  #fullname {
+    visibility: hidden;
+  }
+  .subject {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .subject {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */

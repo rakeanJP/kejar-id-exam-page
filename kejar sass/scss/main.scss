@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap);
+@mixin flex-column{
+    display:flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex-layouting($x, $y){
+    justify-content: $x;
+    align-items: $y;
+}
+@mixin font-config($color, $size, $weight){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto Mono , monospace;
+}
+.header{
+    @include flex-row();
+    @include flex-layouting(space-between, center);
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: auto;
+}
+.header-logo{
+    
+    @include flex-row();
+    align-items: center;
+    margin-left: 16px;
+    justify-content: space-evenly;
+}
+.logo-text{
+    @include font-config(white,15px,700);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.header-profile{
+    @include flex-row();
+    @include flex-layouting(space-evenly,  center );
+    margin: 4px 16px;
+    width: auto;
+}
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.profile-name{
+    @include font-config(white,13px ,400 );
+    
+    text-align: center;
+    
+
+    
+}
+
+.picture{
+    @include flex-row();
+    @include flex-layouting(space-around, center );
+    width: 70px;
+}
+
+.subject{
+    margin: auto;
+    width: 50%;
+    margin-top: 100px;
+    padding: 0px 16px 16px 16px;
+    a{
+        text-decoration: none;
+        
+    }
+}
+
+.menjauh{
+    margin-top: 10px;
+    
+}
+.mapel {
+    a{
+    display: block;
+    padding-top: 20px;}
+    
+    
+}
+.close{
+    opacity: 40%;
+    display: flex;
+    background: #f4f6f9;
+    padding: 1.4rem 1.6rem;
+    
+    padding-top: 20px;
+    margin-top: 20px;
+    color: rgba(0,0,0,0.4);
+    img{
+        margin-right: 13px
+    }
+}
+.container-mapel{
+    background: #f4f6f9;
+    padding: 24px 14px 24px 14px;
+    color: black;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.row{
+    flex-direction: row;
+    display: flex;
+    img{
+        margin-right: 13px;
+    }
+}
+.paragraph{
+    
+    padding: 6px;
+    span{
+        color: rgba(0,0,0,0.4);
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    #fullname{
+        visibility: hidden;
+    }
+
+    .subject{
+        width: auto;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .subject{
+        width: auto;
+    }
+}
